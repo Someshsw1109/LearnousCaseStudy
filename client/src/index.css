@@ -1,0 +1,148 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(60, 9%, 98%);
+  --foreground: hsl(0, 0%, 20%);
+  --muted: hsl(60, 4.8%, 95.9%);
+  --muted-foreground: hsl(25, 5.3%, 44.7%);
+  --popover: hsl(60, 9%, 98%);
+  --popover-foreground: hsl(0, 0%, 20%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(0, 0%, 20%);
+  --border: hsl(20, 5.9%, 90%);
+  --input: hsl(20, 5.9%, 90%);
+  --primary: hsl(343, 75%, 30%);
+  --primary-foreground: hsl(60, 9%, 98%);
+  --secondary: hsl(60, 4.8%, 95.9%);
+  --secondary-foreground: hsl(24, 9.8%, 10%);
+  --accent: hsl(60, 4.8%, 95.9%);
+  --accent-foreground: hsl(24, 9.8%, 10%);
+  --destructive: hsl(0, 84.2%, 60.2%);
+  --destructive-foreground: hsl(60, 9.1%, 97.8%);
+  --ring: hsl(0, 0%, 20%);
+  --radius: 0.5rem;
+  
+  /* Custom Morel Q colors */
+  --burgundy: hsl(343, 75%, 30%);
+  --gold: hsl(45, 73%, 52%);
+  --cream: hsl(60, 29%, 90%);
+  --charcoal: hsl(0, 0%, 20%);
+  --rose-gold: hsl(350, 30%, 80%);
+  --ivory: hsl(60, 100%, 97%);
+}
+
+.dark {
+  --background: hsl(240, 10%, 3.9%);
+  --foreground: hsl(0, 0%, 98%);
+  --muted: hsl(240, 3.7%, 15.9%);
+  --muted-foreground: hsl(240, 5%, 64.9%);
+  --popover: hsl(240, 10%, 3.9%);
+  --popover-foreground: hsl(0, 0%, 98%);
+  --card: hsl(240, 10%, 3.9%);
+  --card-foreground: hsl(0, 0%, 98%);
+  --border: hsl(240, 3.7%, 15.9%);
+  --input: hsl(240, 3.7%, 15.9%);
+  --primary: hsl(343, 75%, 30%);
+  --primary-foreground: hsl(60, 9%, 98%);
+  --secondary: hsl(240, 3.7%, 15.9%);
+  --secondary-foreground: hsl(0, 0%, 98%);
+  --accent: hsl(240, 3.7%, 15.9%);
+  --accent-foreground: hsl(0, 0%, 98%);
+  --destructive: hsl(0, 62.8%, 30.6%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --ring: hsl(240, 4.9%, 83.9%);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .text-burgundy {
+    color: hsl(343, 75%, 30%);
+  }
+  
+  .text-gold {
+    color: hsl(45, 73%, 52%);
+  }
+  
+  .text-cream {
+    color: hsl(60, 29%, 90%);
+  }
+  
+  .text-charcoal {
+    color: hsl(0, 0%, 20%);
+  }
+  
+  .text-rose-gold {
+    color: hsl(350, 30%, 80%);
+  }
+  
+  .text-ivory {
+    color: hsl(60, 100%, 97%);
+  }
+  
+  .bg-burgundy {
+    background-color: hsl(343, 75%, 30%);
+  }
+  
+  .bg-gold {
+    background-color: hsl(45, 73%, 52%);
+  }
+  
+  .bg-cream {
+    background-color: hsl(60, 29%, 90%);
+  }
+  
+  .bg-charcoal {
+    background-color: hsl(0, 0%, 20%);
+  }
+  
+  .bg-rose-gold {
+    background-color: hsl(350, 30%, 80%);
+  }
+  
+  .bg-ivory {
+    background-color: hsl(60, 100%, 97%);
+  }
+  
+  .border-burgundy {
+    border-color: hsl(343, 75%, 30%);
+  }
+  
+  .border-gold {
+    border-color: hsl(45, 73%, 52%);
+  }
+  
+  .border-cream {
+    border-color: hsl(60, 29%, 90%);
+  }
+  
+  .border-charcoal {
+    border-color: hsl(0, 0%, 20%);
+  }
+  
+  .hover\:bg-burgundy:hover {
+    background-color: hsl(343, 75%, 30%);
+  }
+  
+  .hover\:text-burgundy:hover {
+    color: hsl(343, 75%, 30%);
+  }
+  
+  .hover\:text-gold:hover {
+    color: hsl(45, 73%, 52%);
+  }
+  
+  .hover\:border-gold:hover {
+    border-color: hsl(45, 73%, 52%);
+  }
+}
